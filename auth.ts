@@ -135,9 +135,10 @@ export const config = {
   ],
   callbacks: {
     authorized({ request, auth }) {
-      const { pathname } = request.nextUrl
-      if (pathname === "/middleware-example") return !!auth
-      return true
+      // const { pathname } = request.nextUrl
+      // if (pathname === "/middleware-example") return !!auth
+      // return true
+      return !!auth
     },
   },
 } satisfies NextAuthConfig
